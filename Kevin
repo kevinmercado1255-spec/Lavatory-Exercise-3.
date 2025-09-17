@@ -1,0 +1,9 @@
+#include <stdio.n>
+
+int main() {
+    char name [25]
+    char section [25]
+    int num1, num2
+
+printf("Enter Your Complete Name: ");
+}
