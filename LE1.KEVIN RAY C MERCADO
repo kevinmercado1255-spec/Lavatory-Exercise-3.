@@ -15,14 +15,17 @@ int main() {
     printf("Enter second number: "); 
     scanf("%d", &num2); 
 
-    printf("\nStudent Calculator\n");  
+    printf("Student Calculator: \n");  
     printf("Student Name: %s", name);  
     printf("Section: %s\n", section);  
     printf("Results:\n"); 
-    printf("%d + %d %d\n", num1, num2, num1 + num2);  
-    printf("%d - %d %d\n" , num1, num2,  num1 - num2);      
-    printf("%d * %d %d\n",  num1, num2,  num1 * num2); 
-    printf("%d / %d %.2f\n", num1, num2, (float) num1 / num2 );  
+    printf("%d + %d = %d\n", num1, num2, num1 + num2);  
+    printf("%d - %d = %d\n" , num1, num2,  num1 - num2);      
+    printf("%d * %d = %d\n",  num1, num2,  num1 * num2); 
+    printf("%d / %d = %2f\n", num1, num2, (float) num1 / num2 );  
     
     return 0;
+
+
+https://github.com/kevinmercado1255-spec/Lavatory-Exercise-3./blob/4b66d4e59c0ac0d8d5f271928e6e9aba2030aefe/lav%203
 }
