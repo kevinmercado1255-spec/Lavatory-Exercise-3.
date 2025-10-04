@@ -1,0 +1,81 @@
+#include <stdio.h>
+
+float add(float a, float b);
+float sub(float a, float b);
+float mul(float a, float b);
+float div(float a, float b);
+
+int main() {
+    float x, y, result;
+    int num;
+
+    do {
+        printf("\nMultiple Functions to Perform Arithmetic Operations\n");
+        printf("Enter first number: ");
+        scanf("%f", &x);
+        printf("Enter second number: ");
+        scanf("%f", &y);
+
+        printf("\nChoose Operation:\n");
+        printf("[1] Addition\n");
+        printf("[2] Subtraction\n");
+        printf("[3] Multiplication\n");
+        printf("[4] Division\n");
+        printf("[5] Exit Program\n");
+        printf("Enter choice [1-5]: ");
+        scanf("%d", &num);
+
+        switch(num) {
+            case 1:
+                result = add(x, y);
+                printf("%.2f + %.2f = %.2f\n", x, y, result);
+                break;
+            case 2:
+                result = sub(x, y);
+                printf("%.2f - %.2f = %.2f\n", x, y, result);
+                break;
+            case 3:
+                result = mul(x, y);
+                printf("%.2f * %.2f = %.2f\n", x, y, result);
+                break;
+            case 4:
+                if(y != 0)
+                    result = div(x, y);
+                else {
+                    printf("Error: Division by zero not allowed!\n");
+                    break;
+                }
+                printf("%.2f / %.2f = %.2f\n", x, y, result);
+                break;
+            case 5:
+                printf("Exiting program...\n");
+                break;
+            default:
+                printf("Invalid choice! Please try again.\n");
+        }
+    } while(num != 5);
+
+return 0;
+}
+
+
+float add(float a, float b) {
+    return a + b;
+}
+
+float sub(float a, float b) {
+    return a - b;
+}
+
+float mul(float a, float b) {
+    return a * b;
+}
+
+float div(float a, float b) {
+    return a / b;
+}
+
+
+
+
+
